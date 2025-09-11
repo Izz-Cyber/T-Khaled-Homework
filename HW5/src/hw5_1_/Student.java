@@ -1,0 +1,25 @@
+
+package hw5_1_;
+
+public class Student extends Person{
+    private String major ;
+
+    public Student( String name, int yearOfBirth, String major) {
+        super(name, yearOfBirth);
+        this.major = major;
+    }
+
+    public String getMajor() {
+        return major;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString()+
+                "\nMajor : "+major;
+    }
+    
+    
+    
+    
+        }
